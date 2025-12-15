@@ -56,6 +56,34 @@ Your contributions make this resource more valuable for the entire community.
 - `docs: update installation guide`
 - `refactor: simplify validation logic`
 
+### Folder Structure
+
+When adding new documentation, follow this folder structure pattern:
+
+```
+topic/
+├── index.md              ← Main overview/quickstart
+├── Section/
+│   ├── index.md          ← Section overview
+│   ├── feature-one.md
+│   └── feature-two.md
+└── AnotherSection/
+    └── ...
+```
+
+**Conventions:**
+| Element | Format | Example |
+|---------|--------|---------|
+| Folders | PascalCase | `BestPractices/`, `Multimodal/` |
+| Files | kebab-case | `audio-input.md`, `prompt-caching.md` |
+| Index files | `index.md` | Main entry point for each folder |
+
+**Rules:**
+- Group related documentation into folders
+- Each folder should have an `index.md` as entry point
+- Keep file names descriptive but concise
+- Avoid flat structures with many files at the same level
+
 ## How to Use
 
 Include references to relevant documentation when prompting AI agents to generate code. The more context provided, the better the results.
